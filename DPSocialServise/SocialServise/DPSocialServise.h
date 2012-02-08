@@ -16,6 +16,8 @@
 #import "Reachability.h"
 #import "DPShortURL.h"
 
+typedef void (^LoadSel)();
+
 typedef enum 
 {
     SocialServiseFacebook,
@@ -26,8 +28,10 @@ typedef enum
 @interface DPSocialServise : NSObject <DPSocialServiceProtocol>
 
 @property (nonatomic, unsafe_unretained) id<DPSocialServiseProtocolDelegate>delegate;
-
+@property (nonatomic, strong) NSMutableArray *quare;
+@property (nonatomic, assign) BOOL didOpenAuthorizedDialog;
 + (DPSocialServise *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 - (BOOL)isConnection;
+- (void)callService:(LoadSel)block;
 
 @end

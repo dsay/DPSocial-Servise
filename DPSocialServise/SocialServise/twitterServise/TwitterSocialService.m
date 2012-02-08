@@ -11,7 +11,7 @@
 #import "OAuthConsumer.h"
 #import "OAuth.h"
 
-typedef void (^LoadSel)(id);
+//typedef void (^LoadSel)(id);
 
 @interface TwitterSocialService() 
 

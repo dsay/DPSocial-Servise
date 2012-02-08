@@ -10,10 +10,10 @@
 
 @interface User : NSObject
 
-@property (nonatomic, retain) NSNumber *userID;
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *screenname;
-@property (nonatomic, retain) NSString *firstName;
-@property (nonatomic, retain) NSString *imageURL;
+@property (nonatomic, strong) NSNumber *userID;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *screenname;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *imageURL;
 
 @end

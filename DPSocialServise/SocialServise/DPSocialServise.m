@@ -11,9 +11,13 @@
 #import "FacebookSosialService.h"
 #import "TwitterSocialService.h"
 
+
 @implementation DPSocialServise
 
 @synthesize delegate;
+
+@synthesize quare = _quare;
+@synthesize didOpenAuthorizedDialog;
 
 + (DPSocialServise *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate
 {
@@ -53,6 +57,23 @@
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
 }
+
+-(void)callService:(LoadSel)block
+{
+     if ([self isConnection]) {
+            if ([self isAuthorized]){
+                block();
+            }else{
+                if (!didOpenAuthorizedDialog) 
+                {
+                    didOpenAuthorizedDialog = YES;
+                    [self login];
+                }
+                [self.quare addObject:[block copy]];
+            }    
+        }
+}
+
 - (BOOL)isConnection
 {    
     switch ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus]) {
@@ -75,5 +96,14 @@
     }
 
 }
+#pragma mark - 
+#pragma mark property
 
+-(NSMutableArray *)quare
+{
+    if (_quare) 
+        return _quare;
+    _quare = [[NSMutableArray alloc] init];
+    return _quare;
+}
 @end

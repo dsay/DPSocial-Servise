@@ -8,15 +8,11 @@
 
 #import "FacebookSosialService.h"
 
-typedef void (^LoadSel)(id);
 
 @interface FacebookSosialService() 
 
 
 @property (nonatomic, strong) Facebook *facebook;
-@property (readwrite, copy)   LoadSel onSelectBlock;
-@property (nonatomic, strong) NSMutableArray *quare;
-@property (nonatomic, assign) BOOL didOpenAuthorizedDialog;
 @property (nonatomic, strong) NSArray *permissions;
 
 - (User *)parseInfo:(NSDictionary *)users;
@@ -27,9 +23,6 @@ typedef void (^LoadSel)(id);
 @implementation FacebookSosialService
 
 @synthesize facebook = _facebook;
-@synthesize onSelectBlock;
-@synthesize quare = _quare;
-@synthesize didOpenAuthorizedDialog;
 @synthesize permissions = _permissions;
 
 #pragma mark - 
@@ -48,10 +41,7 @@ typedef void (^LoadSel)(id);
 #pragma mark open
 
 - (BOOL)isAuthorized;
-{
-   if (![super isConnection]) 
-        return NO;
-    
+{    
     if ([self.facebook isSessionValid]) 
         return YES;
     
@@ -67,12 +57,9 @@ typedef void (^LoadSel)(id);
     if (![super isConnection]) 
         return ;
     
-    if (!didOpenAuthorizedDialog) 
-        if(![self isAuthorized]){
-            
-            [self.facebook authorize:self.permissions];
-            didOpenAuthorizedDialog = YES;
-        }
+    if(![self isAuthorized]){
+        [self.facebook authorize:self.permissions];
+    }
 }
 
 - (void)logout
@@ -83,90 +70,51 @@ typedef void (^LoadSel)(id);
 
 - (void)getUserInfo
 {
-    if ([self isAuthorized]) {
-        
-        [self.facebook requestWithGraphPath:@"me" andDelegate:self];
-        
-    }else{
-        
-        onSelectBlock = ^ (id himself) {[himself getUserInfo];};
-        [self.quare   addObject:onSelectBlock];
-        [self login];
-        
-    }
+    [super callService:^(){[self.facebook requestWithGraphPath:@"me" andDelegate:self];}];
 }
 
 - (void)getFriendsInfo
 {
-     if ([self isAuthorized]) {
-         
-         [self.facebook requestWithGraphPath:@"me/friends" andDelegate:self];
-         
-     }else{
-         
-         onSelectBlock = ^ (id himself) {[himself getFriendsInfo];};
-         [self.quare addObject:onSelectBlock];
-         [self login];
-         
-     }
+    [super callService:^(){[self.facebook requestWithGraphPath:@"me/friends" andDelegate:self];}];
 }
 
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
-    if ([self isAuthorized]) {
-    
-        NSString *graph = [NSString stringWithFormat:@"feed"];        
-
+    [super callService:^(){NSString *graph = [NSString stringWithFormat:@"feed"];        
+        
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         NSString *actions = [NSString stringWithFormat:@"{\"name\":\"Get %@\",\"link\":\"%@\"}",  
-                                                        MyAppName, MyAppURL];
-       
+                             MyAppName, MyAppURL];
+        
         [params setObject:actions forKey:@"actions"];
         [params setObject:url forKey:@"link"];
         [params setObject:message forKey:@"name"];
         [params setObject:path forKey:@"picture"];
         
         [self.facebook requestWithGraphPath:graph andParams:params andHttpMethod:@"POST" andDelegate:self];
-      
+        
         if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])    
-            [self.delegate socialServiceDidPost:self];
+            [self.delegate socialServiceDidPost:self];}];
     
-    }else{
-    
-        onSelectBlock = ^ (id himself) {[himself postOnMyWallMessage:message imageURL:path link:url];};
-        [self.quare addObject:onSelectBlock];
-        [self login];
-    
-    }
 }
 - (void)postOnFriendsWallMessage:(NSString *)message friendID:(NSNumber *)frien imageURL:(NSString *)path link:(NSString *)url
 {
-     if ([self isAuthorized]) {
-    
-        NSString *graph = [NSString stringWithFormat:@"%@/feed",frien];        
+    [super callService:^(){NSString *graph = [NSString stringWithFormat:@"%@/feed",frien];        
         
-         NSMutableDictionary *params = [NSMutableDictionary dictionary];
-         NSString *actions = [NSString stringWithFormat:@"{\"name\":\"Get %@\",\"link\":\"%@\"}",  
-                                                        MyAppName, MyAppURL];
-         
-         [params setObject:actions forKey:@"actions"];
-         [params setObject:url forKey:@"link"];
-         [params setObject:message forKey:@"name"];
-         [params setObject:path forKey:@"picture"];
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        NSString *actions = [NSString stringWithFormat:@"{\"name\":\"Get %@\",\"link\":\"%@\"}",  
+                             MyAppName, MyAppURL];
+        
+        [params setObject:actions forKey:@"actions"];
+        [params setObject:url forKey:@"link"];
+        [params setObject:message forKey:@"name"];
+        [params setObject:path forKey:@"picture"];
         
         
         [self.facebook requestWithGraphPath:graph andParams:params andHttpMethod:@"POST" andDelegate:self];
-         
-         if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])  
-             [self.delegate socialServiceDidPost:self];
-    
-     }else{
-     
-         onSelectBlock = ^ (id himself) {[himself postOnFriendsWallMessage:message friendID:frien imageURL:path link:url];};
-         [self.quare addObject:onSelectBlock];
-         [self login];
-    
-     }
+        
+        if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])  
+            [self.delegate socialServiceDidPost:self];}];
 }
 
 #pragma mark - 
@@ -181,10 +129,10 @@ typedef void (^LoadSel)(id);
     [defaults setObject:expiryDate forKey:FacebookExpiryDateKey];
     [defaults synchronize];
     
-    for (LoadSel block in _quare) 
-        block(self);
+    for (LoadSel block in self.quare) 
+        block();
     
-    didOpenAuthorizedDialog = NO;
+   self.didOpenAuthorizedDialog = NO;
     
      if ([self.delegate respondsToSelector:@selector(socialServiceDidLogin:)])
          [self.delegate socialServiceDidLogin:self];
@@ -192,7 +140,7 @@ typedef void (^LoadSel)(id);
 
 - (void)fbDidNotLogin:(BOOL)cancelled
 {
-    didOpenAuthorizedDialog = NO;
+    self.didOpenAuthorizedDialog = NO;
 }
 
 -(void)fbDidLogout
@@ -205,7 +153,8 @@ typedef void (^LoadSel)(id);
 
 -(void)request:(FBRequest *)request didFailWithError:(NSError *)error
 {
-    [self.delegate socialService:self  didFailWithError:error];
+    if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)])
+        [self.delegate socialService:self  didFailWithError:error];
 }
 
 - (void)request:(FBRequest *)request didLoad:(id)result {
@@ -258,14 +207,6 @@ typedef void (^LoadSel)(id);
     }
     _facebook = [[Facebook alloc] initWithAppId:FacebookKey andDelegate:self];
     return _facebook;
-}
-
--(NSMutableArray *)quare
-{
-    if (_quare) 
-        return _quare;
-    _quare = [[NSMutableArray alloc] init];
-    return _quare;
 }
 
 -(NSArray *)permissions
