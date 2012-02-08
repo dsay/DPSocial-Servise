@@ -80,7 +80,8 @@
 
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
-    [super callService:^(){NSString *graph = [NSString stringWithFormat:@"feed"];        
+    [super callService:^(){
+        NSString *graph = [NSString stringWithFormat:@"feed"];        
         
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         NSString *actions = [NSString stringWithFormat:@"{\"name\":\"Get %@\",\"link\":\"%@\"}",  
@@ -94,12 +95,14 @@
         [self.facebook requestWithGraphPath:graph andParams:params andHttpMethod:@"POST" andDelegate:self];
         
         if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])    
-            [self.delegate socialServiceDidPost:self];}];
+            [self.delegate socialServiceDidPost:self];
+    }];
     
 }
 - (void)postOnFriendsWallMessage:(NSString *)message friendID:(NSNumber *)frien imageURL:(NSString *)path link:(NSString *)url
 {
-    [super callService:^(){NSString *graph = [NSString stringWithFormat:@"%@/feed",frien];        
+    [super callService:^(){
+        NSString *graph = [NSString stringWithFormat:@"%@/feed",frien];        
         
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         NSString *actions = [NSString stringWithFormat:@"{\"name\":\"Get %@\",\"link\":\"%@\"}",  
@@ -114,7 +117,8 @@
         [self.facebook requestWithGraphPath:graph andParams:params andHttpMethod:@"POST" andDelegate:self];
         
         if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])  
-            [self.delegate socialServiceDidPost:self];}];
+            [self.delegate socialServiceDidPost:self];
+    }];
 }
 
 #pragma mark - 

@@ -11,8 +11,6 @@
 #import "OAuthConsumer.h"
 #import "OAuth.h"
 
-//typedef void (^LoadSel)(id);
-
 @interface TwitterSocialService() 
 
 @property (readwrite, copy)   LoadSel onSelectBlock;
@@ -48,9 +46,6 @@
 
 - (BOOL)isAuthorized;
 {
-    if (![super isConnection]) 
-       return NO;
-    
     [self consumer];
     self.accessToken = [[OAToken alloc]initWithKey:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterAccessTokenKey] 
                                             secret:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterSecretTokenKey]];
@@ -104,13 +99,12 @@
 
 - (void)getUserInfo
 {
-    if ([self isAuthorized]) {
-        
+    [super callService:^(){
         OAMutableURLRequest *oRequest = [[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:TwitterUserInfo]
-                                                                        consumer:self.consumer
-                                                                           token:self.accessToken
-                                                                           realm:nil
-                                                               signatureProvider:nil];
+                                                                                                 consumer:self.consumer
+                                                                                                    token:self.accessToken
+                                                                                                    realm:nil
+                                                                                        signatureProvider:nil];
         
         [oRequest setHTTPMethod:@"GET"];
         OADataFetcher *fetcher = [[OADataFetcher alloc] init] ;
@@ -119,54 +113,39 @@
         [fetcher fetchDataWithRequest:oRequest
                              delegate:self
                     didFinishSelector:@selector(getUserInfo:didFinishWithData:)
-                      didFailSelector:@selector(getUserInfo:didFailWithError:)];	
-        
-        
-    }else{
-        
-        onSelectBlock = ^ (id himself) {[himself getUserInfo];};
-        [self.quare   addObject:onSelectBlock];
-        [self login];
-        
-    }
+                      didFailSelector:@selector(getUserInfo:didFailWithError:)];
+    }];
 }
 
 - (void)getFriendsInfo
 {
-    if ([self isAuthorized]) {
+        [super callService:^(){
+            OAMutableURLRequest *oRequest = [[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:TwitterFriendsID]
+                                                                            consumer:self.consumer
+                                                                               token:self.accessToken
+                                                                               realm:nil
+                                                                   signatureProvider:nil];
+            [oRequest setHTTPMethod:@"GET"];
+            
+            OARequestParameter* p = [[OARequestParameter alloc] initWithName:@"screen_name" 
+                                                                       value:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterUserScreenName]];
+            [oRequest setParameters:[NSArray arrayWithObject:p]];
+            
+            OADataFetcher *fetcher = [[OADataFetcher alloc] init] ;
+            
+            
+            [fetcher fetchDataWithRequest:oRequest
+                                 delegate:self
+                        didFinishSelector:@selector(getFriendsID:didFinishWithData:)
+                          didFailSelector:@selector(getFriendsID:didFailWithError:)];
+        }];
         
-        OAMutableURLRequest *oRequest = [[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:TwitterFriendsID]
-                                                                        consumer:self.consumer
-                                                                           token:self.accessToken
-                                                                           realm:nil
-                                                               signatureProvider:nil];
-        [oRequest setHTTPMethod:@"GET"];
-        
-        OARequestParameter* p = [[OARequestParameter alloc] initWithName:@"screen_name" 
-                                                                   value:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterUserScreenName]];
-        [oRequest setParameters:[NSArray arrayWithObject:p]];
-        
-        OADataFetcher *fetcher = [[OADataFetcher alloc] init] ;
-        
-        
-        [fetcher fetchDataWithRequest:oRequest
-                             delegate:self
-                    didFinishSelector:@selector(getFriendsID:didFinishWithData:)
-                      didFailSelector:@selector(getFriendsID:didFailWithError:)];
-        
-    }else{
-        
-        onSelectBlock = ^ (id himself) {[himself getFriendsInfo];};
-        [self.quare addObject:onSelectBlock];
-        [self login];
-        
-    }
+ 
 }
 
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
-    if ([self isAuthorized]) {
-        
+    [super callService:^(){   
         OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:TwitrerUpdate]
                                                                        consumer:self.consumer
                                                                           token:self.accessToken
@@ -189,20 +168,11 @@
                              delegate:self
                     didFinishSelector:@selector(postOnMyWallStatus:didFinishWithData:)
                       didFailSelector:@selector(postOnMyWallStatus:didFailWithError:)];
-        
-        
-    }else{
-        
-        onSelectBlock = ^ (id himself) {[himself postOnMyWallMessage:message imageURL:path link:url];};
-        [self.quare addObject:onSelectBlock];
-        [self login];
-        
-    }
+    }];
 }
 - (void)postOnFriendsWallMessage:(NSString *)message friendID:(NSNumber *)frien imageURL:(NSString *)path link:(NSString *)url
 {
-    if ([self isAuthorized]) {
-        
+    [super callService:^(){   
         OAMutableURLRequest *oRequest = [[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:TwitterFriendsUpdate]
                                                                         consumer:self.consumer
                                                                            token:self.accessToken
@@ -218,14 +188,7 @@
                              delegate:self
                     didFinishSelector:@selector(postOnFriendWallStatus:didFinishWithData:)
                       didFailSelector:@selector(postOnFriendWallStatus:didFailWithError:)]; 
-        
-    }else{
-        
-        onSelectBlock = ^ (id himself) {[himself postOnFriendsWallMessage:message friendID:frien imageURL:path link:url];};
-        [self.quare addObject:onSelectBlock];
-        [self login];
-        
-    }
+    }];
 }
 #pragma mark - 
 #pragma mark privat
@@ -265,7 +228,8 @@
 }
 - (void)responseCousumerAuthorized:(OAServiceTicket *)ticket didFailWithError:(NSError *)error 
 {
-
+    self.didOpenAuthorizedDialog = NO;
+    
     if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
         [self.delegate socialService:self didFailWithError:error];
 }
@@ -301,6 +265,8 @@
 - (void)failedAuthorization
 {
     [self.authorizeWebView.view removeFromSuperview];
+    
+    self.didOpenAuthorizedDialog = NO;
     
     if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
         [self.delegate socialService:self didFailWithError:[NSError errorWithDomain:@"You cannot Authorization !!" code:2 userInfo:nil]];  
@@ -338,19 +304,21 @@
         if (self.accessToken != nil) 
             self.accessToken = nil;
         
-        for (LoadSel block in _quare) 
-            block(self);
-        
         self.accessToken = [[OAToken alloc] initWithHTTPResponseBody:responseBody];
         
+        for (LoadSel block in _quare) 
+            block();
 
         if ([self.delegate respondsToSelector:@selector(socialServiceDidLogin:)])
             [self.delegate socialServiceDidLogin:self];
     }
+    
+    self.didOpenAuthorizedDialog = NO;
 }
 -(void)responseUserAuthorized:(OAServiceTicket *)ticket didFailWithError:(NSError *)error
 {
-   
+    self.didOpenAuthorizedDialog = NO;
+    
     if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
         [self.delegate socialService:self didFailWithError:error];
 }
