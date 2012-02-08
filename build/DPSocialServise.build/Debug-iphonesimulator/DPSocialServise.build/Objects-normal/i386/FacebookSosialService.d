@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/FacebookSosialService.m \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/FacebookSosialService.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPSocialServiceProtocol.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPSocialServiseProtocolDelegate.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/models/User.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Config.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/JSON.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJSON.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJsonParser.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJsonBase.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJsonWriter.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/NSObject+SBJSON.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/NSString+SBJSON.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/Reachability/Reachability.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/ShortURL/DPShortURL.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPShortURLProtocolDelegate.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/FBConnect.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/Facebook.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/FBLoginDialog.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/FBDialog.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/FBRequest.h

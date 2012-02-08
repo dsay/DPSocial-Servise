@@ -1,0 +1,248 @@
+TDPSocialServise
+v4
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/Info.plist DPSocialServise/DPSocialServise-Info.plist
+cProcessPCH /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth DPSocialServise/DPSocialServise-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise normal i386
+cGenerateDSYMFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise
+cCopyStringsFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/en.lproj/InfoPlist.strings DPSocialServise/en.lproj/InfoPlist.strings
+cTouch /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+c000000004EA126EA0000000000000110
+t1319184106
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F1CC0000000000245480
+t1316155852
+s2380928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F2960000000000353830
+t1316156054
+s3487792
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7806AB00000000008F7390
+t1316488875
+s9401232
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m
+c000000004F2920F300000000000008F3
+t1328095475
+s2291
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/DPSocialServise-Prefix.pch
+c000000004F2920F3000000000000014D
+t1328095475
+s333
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m
+c000000004F29274300000000000003AF
+t1328097091
+s943
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m
+c000000004F292A26000000000000012A
+t1328097830
+s298
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/en.lproj/InfoPlist.strings
+c000000004F2920F3000000000000002D
+t1328095475
+s45
+
+N/Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m
+c000000004F2920F3000000000000015D
+t1328095475
+s349
+
+N/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.LinkFileList
+c000000004F292A71000000000000022F
+t1328097905
+s559
+
+N/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/Info.plist
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/PkgInfo
+t2
+s0
+
+N/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth
+t2
+s0
+
+NDPSocialServise/DPSocialServise-Info.plist
+c000000004F2920F300000000000004B3
+t1328095475
+s1203
+
+CBuild AST from /Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m
+r0
+
+CBuild AST from /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m
+r0
+
+CBuild AST from /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m
+r0
+
+CBuild AST from /Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf5bca7f161d9b441^fdbfd2f161d9b441^---0#1#0#--18"Check dependencies36"AD076C1B-8D85-450B-83EF-BB021E2AFE5E-
+
+CCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349790711.218581
+e349790711.692214
+r1
+xCompileC
+xbuild/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o
+x/Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.mb93638f761d9b441^0e87b1f761d9b441^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m0000000000000000^2834"CompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o DPSocialServise/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dsay/Desktop/DPSocialServise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-generated-files.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-own-target-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-all-target-headers.hmap -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-project-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/include -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources/i386 -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -include /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch -MMD -MT dependencies -MF /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.d -c /Users/dsay/Desktop/DPSocialServise/DPSocialServise/AppDelegate.m -o /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/AppDelegate.o36"1A28E54F-57AB-4365-A4F2-46A91DADD19F-
+
+CCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349790711.220870
+e349790711.673328
+r1
+xCompileC
+xbuild/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o
+x/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m1ea738f761d9b441^ad6bacf761d9b441^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m0000000000000000^2882"CompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o DPSocialServise/SocialServise/DPSocialServise.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dsay/Desktop/DPSocialServise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-generated-files.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-own-target-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-all-target-headers.hmap -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-project-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/include -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources/i386 -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -include /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch -MMD -MT dependencies -MF /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.d -c /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.m -o /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.o36"68077535-32D9-4E88-91E3-93D6F769DE7A-
+
+CCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349790711.694062
+e349790711.788609
+r1
+xCompileC
+xbuild/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o
+x/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.mf7cdb1f761d9b441^7cf1c9f761d9b441^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m0000000000000000^2832"CompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o DPSocialServise/SocialServise/Users.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dsay/Desktop/DPSocialServise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-generated-files.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-own-target-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-all-target-headers.hmap -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-project-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/include -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources/i386 -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -include /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch -MMD -MT dependencies -MF /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.d -c /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Users.m -o /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/Users.o36"85A762B4-7BBD-4E81-836F-62B44A01E1D9-
+
+CCompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o /Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349790711.674541
+e349790711.794980
+r1
+xCompileC
+xbuild/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o
+x/Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.md2fbaef761d9b441^8997cbf761d9b441^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m0000000000000000^2799"CompileC build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o DPSocialServise/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dsay/Desktop/DPSocialServise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-generated-files.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-own-target-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-all-target-headers.hmap -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-project-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/include -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources/i386 -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -include /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch -MMD -MT dependencies -MF /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.d -c /Users/dsay/Desktop/DPSocialServise/DPSocialServise/main.m -o /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/main.o36"49C4DEBC-EE47-42F9-967B-4037F0C166AF-
+
+CCopyStringsFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/en.lproj/InfoPlist.strings DPSocialServise/en.lproj/InfoPlist.strings
+s349790712.893345
+e349790713.057960
+r1
+xCopyStringsFile
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/en.lproj/InfoPlist.strings
+xDPSocialServise/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy DPSocialServise/en.lproj/InfoPlist.stringsbed906f961d9b441^62d70ef961d9b441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/en.lproj/InfoPlist.strings0000000000000000^537"CopyStringsFile build/Debug-iphonesimulator/DPSocialServise.app/en.lproj/InfoPlist.strings DPSocialServise/en.lproj/InfoPlist.strings    cd /Users/dsay/Desktop/DPSocialServise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/en.lproj -- DPSocialServise/en.lproj/InfoPlist.strings36"B132B283-98DE-4AC0-8E5D-736729678FB9-
+
+CGenerateDSYMFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise
+s349790712.565487
+e349790712.890825
+r1
+xGenerateDSYMFile
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Generating /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYMf9d990f861d9b441^d00ee4f861d9b441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM00f8a021dcffdf42^532"GenerateDSYMFile build/Debug-iphonesimulator/DPSocialServise.app.dSYM build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise    cd /Users/dsay/Desktop/DPSocialServise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise -o /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app.dSYM36"05842DF0-D13A-4CBB-A98B-CD451FDDCD9D-
+
+CLd /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise normal i386
+s349790711.800354
+e349790712.563609
+r1
+xLd
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise
+xnormal
+xi386
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Link /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise87fbccf761d9b441^c74a90f861d9b441^---0#0#0#--1083"Ld build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise normal i386    cd /Users/dsay/Desktop/DPSocialServise    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -L/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -filelist /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/Objects-normal/i386/DPSocialServise.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/DPSocialServise36"75039781-2BD3-4FF9-B53A-5D82512CDF68-
+
+CProcessInfoPlistFile /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/Info.plist DPSocialServise/DPSocialServise-Info.plist
+s349790705.826438
+e349790705.921524
+r1
+xProcessInfoPlistFile
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/Info.plist
+xDPSocialServise/DPSocialServise-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Process DPSocialServise/DPSocialServise-Info.plist8670d8f161d9b441^23bbeef161d9b441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/DPSocialServise-Info.plist0000000000000000^633"ProcessInfoPlistFile build/Debug-iphonesimulator/DPSocialServise.app/Info.plist DPSocialServise/DPSocialServise-Info.plist    cd /Users/dsay/Desktop/DPSocialServise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility DPSocialServise/DPSocialServise-Info.plist -genpkginfo /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app/Info.plist36"58A2C5F2-481F-43A0-A763-9B01446DF0B4-
+
+CProcessPCH /Users/dsay/Library/Developer/Xcode/DerivedData/DPSocialServise-ctipivpyelkldngcxovktwjxozeo/Index/PrecompiledHeaders/DPSocialServise-Prefix-apzoknnwzppdlkcfddfxxrizhuqm_ast/DPSocialServise-Prefix.pch.pth DPSocialServise/DPSocialServise-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth DPSocialServise/DPSocialServise-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s349790705.924121
+e349790711.217002
+r1
+xProcessPCH
+x/var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth
+xDPSocialServise/DPSocialServise-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile DPSocialServise/DPSocialServise-Prefix.pch39b4ecf161d9b441^2d9537f761d9b441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/dsay/Desktop/DPSocialServise/DPSocialServise/DPSocialServise-Prefix.pch0000000000000000^2834"ProcessPCH /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth DPSocialServise/DPSocialServise-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dsay/Desktop/DPSocialServise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-generated-files.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-own-target-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-all-target-headers.hmap -iquote /Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DPSocialServise-project-headers.hmap -I/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/include -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources/i386 -I/Users/dsay/Desktop/DPSocialServise/build/DPSocialServise.build/Debug-iphonesimulator/DPSocialServise.build/DerivedSources -F/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator -c /Users/dsay/Desktop/DPSocialServise/DPSocialServise/DPSocialServise-Prefix.pch -o /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/-V/-VjzqG5XHzyY8s2zRLjJiE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DPSocialServise-Prefix-grxzqfnonjhyyzdrixtcswjshbxc/DPSocialServise-Prefix.pch.d36"C955A99B-3F3F-41C9-81C6-129ECFE53C77-
+
+CTouch /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app
+s349790713.061123
+e349790713.081760
+r1
+xTouch
+x/Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Touch /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.appa2b80ff961d9b441^ddef14f961d9b441^---0#0#0#--334"Touch build/Debug-iphonesimulator/DPSocialServise.app    cd /Users/dsay/Desktop/DPSocialServise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/dsay/Desktop/DPSocialServise/build/Debug-iphonesimulator/DPSocialServise.app36"A17E75C0-3FDE-47D5-84D6-1398618D9573-
+
