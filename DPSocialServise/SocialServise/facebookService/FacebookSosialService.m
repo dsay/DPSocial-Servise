@@ -13,11 +13,11 @@ typedef void (^LoadSel)(id);
 @interface FacebookSosialService() 
 
 
-@property (nonatomic, retain) Facebook *facebook;
+@property (nonatomic, strong) Facebook *facebook;
 @property (readwrite, copy)   LoadSel onSelectBlock;
-@property (nonatomic, retain) NSMutableArray *quare;
+@property (nonatomic, strong) NSMutableArray *quare;
 @property (nonatomic, assign) BOOL didOpenAuthorizedDialog;
-@property (nonatomic, retain) NSArray *permissions;
+@property (nonatomic, strong) NSArray *permissions;
 
 - (User *)parseInfo:(NSDictionary *)users;
 

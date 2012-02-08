@@ -22,6 +22,7 @@
    // [djhfjs postOnMyWallMessage:@"dkv fg  kg  agfdklgdfjkv vdfkjv  vfrkgh jvv v ejfv jjfrfn jdjfhjf" imageURL:@"http://art.ngfiles.com/medium_views/107/shenaniganon_angry-face.png" link:@"http://www.box.com/s/7cuh1mxdfxaopy86bazm"];
    
     [socialServise getUserInfo];
+    [socialServise getFriendsInfo];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -42,7 +43,7 @@
 {
     for (User *user in friends) 
         NSLog(@"%@",user.name);
-    [socialServise postOnFriendsWallMessage:@"sdjfh" friendID:[[friends objectAtIndex:2]userID] imageURL:@"2222222222" link:@"33333333333"];
+    [socialServise postOnFriendsWallMessage:@"sdjfh" friendID:[[friends objectAtIndex:1]userID] imageURL:@"2222222222" link:@"33333333333"];
 }
 //- (void)socialServiceDidPost:(DPSocialServise *)servise
 //{

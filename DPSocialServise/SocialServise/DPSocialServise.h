@@ -25,7 +25,7 @@ typedef enum
 
 @interface DPSocialServise : NSObject <DPSocialServiceProtocol>
 
-@property (nonatomic, retain) id<DPSocialServiseProtocolDelegate>delegate;
+@property (nonatomic, unsafe_unretained) id<DPSocialServiseProtocolDelegate>delegate;
 
 + (DPSocialServise *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 - (BOOL)isConnection;

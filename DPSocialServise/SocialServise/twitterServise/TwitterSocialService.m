@@ -16,10 +16,10 @@ typedef void (^LoadSel)(id);
 @interface TwitterSocialService() 
 
 @property (readwrite, copy)   LoadSel onSelectBlock;
-@property (nonatomic, retain) NSMutableArray *quare;
-@property (nonatomic, retain) OAConsumer *consumer;
-@property (nonatomic, retain) OAToken *accessToken;
-@property (nonatomic, retain) AuthorizeWebViewController *authorizeWebView;
+@property (nonatomic, strong) NSMutableArray *quare;
+@property (nonatomic, strong) OAConsumer *consumer;
+@property (nonatomic, strong) OAToken *accessToken;
+@property (nonatomic, strong) AuthorizeWebViewController *authorizeWebView;
 
 @end
 
