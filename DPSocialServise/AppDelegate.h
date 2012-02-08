@@ -10,7 +10,7 @@
 #import "DPSocialServise.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate,DPSocialServiseProtocolDelegate>
 {
-    DPSocialServise *djhfjs;
+    DPSocialServise *socialServise;
 }
 @property (strong, nonatomic) UIWindow *window;
 

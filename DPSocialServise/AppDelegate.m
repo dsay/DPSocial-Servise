@@ -17,11 +17,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    djhfjs = [DPSocialServise socialServiseType:SocialServiseTwitter andDelegate:self];
+    socialServise = [DPSocialServise socialServiseType:SocialServiseTwitter andDelegate:self];
     
    // [djhfjs postOnMyWallMessage:@"dkv fg  kg  agfdklgdfjkv vdfkjv  vfrkgh jvv v ejfv jjfrfn jdjfhjf" imageURL:@"http://art.ngfiles.com/medium_views/107/shenaniganon_angry-face.png" link:@"http://www.box.com/s/7cuh1mxdfxaopy86bazm"];
    
-    [djhfjs getUserInfo];
+    [socialServise getUserInfo];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -30,7 +30,7 @@
 -(void)socialServiceDidLogin:(DPSocialServise *)servise
 {
     NSLog(@"%@",servise);
-    NSLog(@"%@",djhfjs);
+    NSLog(@"%@",socialServise);
 }
 -(void)socialService:(DPSocialServise *)service didLoadUserInfo:(User *)user
 {
@@ -42,7 +42,7 @@
 {
     for (User *user in friends) 
         NSLog(@"%@",user.name);
-    [djhfjs postOnFriendsWallMessage:@"sdjfh" friendID:[[friends objectAtIndex:2]userID] imageURL:@"2222222222" link:@"33333333333"];
+    [socialServise postOnFriendsWallMessage:@"sdjfh" friendID:[[friends objectAtIndex:2]userID] imageURL:@"2222222222" link:@"33333333333"];
 }
 //- (void)socialServiceDidPost:(DPSocialServise *)servise
 //{
