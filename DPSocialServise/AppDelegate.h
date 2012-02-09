@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DPSocialServise.h"
+#import "DPSocialService.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate,DPSocialServiseProtocolDelegate>
 {
-    DPSocialServise *socialServise;
+    DPSocialService *socialServise;
 }
 @property (strong, nonatomic) UIWindow *window;
 

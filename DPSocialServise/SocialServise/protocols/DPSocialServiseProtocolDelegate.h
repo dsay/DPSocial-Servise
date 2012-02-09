@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
-@class DPSocialServise;
+@class DPSocialService;
 
 @protocol DPSocialServiseProtocolDelegate <NSObject>
 
 @optional
-- (void)socialServiceDidLogin:(DPSocialServise *)servise;
-- (void)socialServiceDidPost:(DPSocialServise *)servise;
+- (void)socialServiceDidLogin:(DPSocialService *)servise;
+- (void)socialServiceDidPost:(DPSocialService *)servise;
 
-- (void)socialService:(DPSocialServise *)service didLoadUserInfo:(User *)user;
-- (void)socialService:(DPSocialServise *)service didLoadFriendsInfo:(NSArray *)friends;
+- (void)socialService:(DPSocialService *)service didLoadUserInfo:(User *)user;
+- (void)socialService:(DPSocialService *)service didLoadFriendsInfo:(NSArray *)friends;
 
-- (void)socialService:(DPSocialServise *)servise didFailWithError:(NSError *)error;
+- (void)socialService:(DPSocialService *)servise didFailWithError:(NSError *)error;
 
 @end

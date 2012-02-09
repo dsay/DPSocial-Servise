@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPSocialServise.h"
+#import "DPSocialService.h"
 #import "FBConnect.h"
 
 
-@interface FacebookSosialService : DPSocialServise <FBDialogDelegate , FBRequestDelegate, FBSessionDelegate>
+@interface FacebookSosialService : DPSocialService <FBDialogDelegate , FBRequestDelegate, FBSessionDelegate>
 
 - (id)initWithDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 

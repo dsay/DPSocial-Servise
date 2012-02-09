@@ -38,6 +38,8 @@
         if (delegate) 
             self.delegate = delegate;
     
+    [super isHaveAPPkey];
+    
     return self;
 }
 

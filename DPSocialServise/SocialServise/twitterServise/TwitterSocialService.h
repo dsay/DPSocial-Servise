@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "DPSocialServise.h"
+#import "DPSocialService.h"
 #import "AuthorizeWebViewController.h"
 
-@interface TwitterSocialService : DPSocialServise <AuthorizeWebViewControllerDelegate>
+@interface TwitterSocialService : DPSocialService <AuthorizeWebViewControllerDelegate>
 
 - (id)initWithDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 

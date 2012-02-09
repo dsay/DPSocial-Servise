@@ -6,20 +6,20 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "DPSocialServise.h"
+#import "DPSocialService.h"
 
 #import "FacebookSosialService.h"
 #import "TwitterSocialService.h"
 
 
-@implementation DPSocialServise
+@implementation DPSocialService
 
 @synthesize delegate;
 
 @synthesize quare = _quare;
 @synthesize didOpenAuthorizedDialog;
 
-+ (DPSocialServise *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate
++ (DPSocialService *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate
 {
     switch (type) {
         case SocialServiseFacebook:

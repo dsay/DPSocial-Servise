@@ -13,6 +13,7 @@
 		4D09B55B14D958730023E30C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D09B55914D958730023E30C /* InfoPlist.strings */; };
 		4D09B55D14D958730023E30C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09B55C14D958730023E30C /* main.m */; };
 		4D09B56114D958730023E30C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09B56014D958730023E30C /* AppDelegate.m */; };
+		4D1E60CE14E3C82900DD445D /* DPSocialService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E60CD14E3C82900DD445D /* DPSocialService.m */; };
 		4D6DC61B14E0153000CB18B6 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DC5C914E0153000CB18B6 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4D6DC61C14E0153000CB18B6 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DC5CC14E0153000CB18B6 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4D6DC61D14E0153000CB18B6 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DC5CE14E0153000CB18B6 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -56,7 +57,7 @@
 		4D6DC64E14E01DC400CB18B6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC64D14E01DC400CB18B6 /* MessageUI.framework */; };
 		4D6DC65014E01DD300CB18B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC64F14E01DD300CB18B6 /* libz.dylib */; };
 		4D6DC65214E01DE300CB18B6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC65114E01DE300CB18B6 /* libxml2.dylib */; };
-		4DD20CE314DA9E63009C4A4E /* DPSocialServise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20CBB14DA9E63009C4A4E /* DPSocialServise.m */; };
+		4DC4C27214E2D2E0002271B6 /* DPBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4C27114E2D2D1002271B6 /* DPBaseService.m */; };
 		4DD20CE414DA9E63009C4A4E /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20CBF14DA9E63009C4A4E /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4DD20CE514DA9E63009C4A4E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DD20CC214DA9E63009C4A4E /* FBDialog.bundle */; };
 		4DD20CE614DA9E63009C4A4E /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20CC414DA9E63009C4A4E /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -84,6 +85,8 @@
 		4D09B55E14D958730023E30C /* DPSocialServise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPSocialServise-Prefix.pch"; sourceTree = "<group>"; };
 		4D09B55F14D958730023E30C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D09B56014D958730023E30C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D1E60CC14E3C82900DD445D /* DPSocialService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSocialService.h; sourceTree = "<group>"; };
+		4D1E60CD14E3C82900DD445D /* DPSocialService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSocialService.m; sourceTree = "<group>"; };
 		4D6DC5C814E0153000CB18B6 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		4D6DC5C914E0153000CB18B6 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		4D6DC5CA14E0153000CB18B6 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -169,9 +172,9 @@
 		4D6DC64D14E01DC400CB18B6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4D6DC64F14E01DD300CB18B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4D6DC65114E01DE300CB18B6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4DC4C27014E2D2D1002271B6 /* DPBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBaseService.h; path = BaseServise/DPBaseService.h; sourceTree = "<group>"; };
+		4DC4C27114E2D2D1002271B6 /* DPBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBaseService.m; path = BaseServise/DPBaseService.m; sourceTree = "<group>"; };
 		4DD20CB914DA9E63009C4A4E /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		4DD20CBA14DA9E63009C4A4E /* DPSocialServise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSocialServise.h; sourceTree = "<group>"; };
-		4DD20CBB14DA9E63009C4A4E /* DPSocialServise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSocialServise.m; sourceTree = "<group>"; };
 		4DD20CBE14DA9E63009C4A4E /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		4DD20CBF14DA9E63009C4A4E /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
 		4DD20CC014DA9E63009C4A4E /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = "<group>"; };
@@ -441,12 +444,22 @@
 			path = twiView;
 			sourceTree = "<group>";
 		};
+		4DC4C27414E2D2EF002271B6 /* BaseServise */ = {
+			isa = PBXGroup;
+			children = (
+				4DC4C27014E2D2D1002271B6 /* DPBaseService.h */,
+				4DC4C27114E2D2D1002271B6 /* DPBaseService.m */,
+			);
+			name = BaseServise;
+			sourceTree = "<group>";
+		};
 		4DD20CB814DA9E63009C4A4E /* SocialServise */ = {
 			isa = PBXGroup;
 			children = (
 				4DD20CB914DA9E63009C4A4E /* Config.h */,
-				4DD20CBA14DA9E63009C4A4E /* DPSocialServise.h */,
-				4DD20CBB14DA9E63009C4A4E /* DPSocialServise.m */,
+				4D1E60CC14E3C82900DD445D /* DPSocialService.h */,
+				4D1E60CD14E3C82900DD445D /* DPSocialService.m */,
+				4DC4C27414E2D2EF002271B6 /* BaseServise */,
 				4D6DC5C414E014E200CB18B6 /* twitterServise */,
 				4DD20CBC14DA9E63009C4A4E /* facebookService */,
 				4DD20CD914DA9E63009C4A4E /* models */,
@@ -602,7 +615,6 @@
 			files = (
 				4D09B55D14D958730023E30C /* main.m in Sources */,
 				4D09B56114D958730023E30C /* AppDelegate.m in Sources */,
-				4DD20CE314DA9E63009C4A4E /* DPSocialServise.m in Sources */,
 				4DD20CE414DA9E63009C4A4E /* Facebook.m in Sources */,
 				4DD20CE614DA9E63009C4A4E /* FBDialog.m in Sources */,
 				4DD20CE714DA9E63009C4A4E /* FBLoginDialog.m in Sources */,
@@ -648,6 +660,8 @@
 				4D6DC63914E0153000CB18B6 /* OATokenManager.m in Sources */,
 				4D6DC63A14E0153000CB18B6 /* AuthorizeWebViewController.m in Sources */,
 				4D6DC64014E015A400CB18B6 /* TwitterSocialService.m in Sources */,
+				4DC4C27214E2D2E0002271B6 /* DPBaseService.m in Sources */,
+				4D1E60CE14E3C82900DD445D /* DPSocialService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

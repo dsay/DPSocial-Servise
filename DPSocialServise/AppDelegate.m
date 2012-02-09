@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DPSocialServise.h"
+#import "DPSocialService.h"
 
 @implementation AppDelegate
 
@@ -17,31 +17,29 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    socialServise = [DPSocialServise socialServiseType:SocialServiseTwitter andDelegate:self];
+    socialServise = [DPSocialService socialServiseType:SocialServiseTwitter andDelegate:self];
     
    // [djhfjs postOnMyWallMessage:@"dkv fg  kg  agfdklgdfjkv vdfkjv  vfrkgh jvv v ejfv jjfrfn jdjfhjf" imageURL:@"http://art.ngfiles.com/medium_views/107/shenaniganon_angry-face.png" link:@"http://www.box.com/s/7cuh1mxdfxaopy86bazm"];
     [socialServise logout];
     [socialServise getUserInfo];
     [socialServise getFriendsInfo];
-  //  [socialServise postOnMyWallMessage:@"dsf" imageURL:@"http://lady.webnice.ru/img/2011/10/img20111030082252_3779.jpg" link:@"http://rest-night.com/online-radio-all-stations-world/"];
-    
-    
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
--(void)socialServiceDidLogin:(DPSocialServise *)servise
+-(void)socialServiceDidLogin:(DPSocialService *)servise
 {
     NSLog(@"%@",servise);
     NSLog(@"%@",socialServise);
 }
--(void)socialService:(DPSocialServise *)service didLoadUserInfo:(User *)user
+-(void)socialService:(DPSocialService *)service didLoadUserInfo:(User *)user
 {
      NSLog(@"%@",service);
     NSLog(@"%@",user.name);
 }
 //
-- (void)socialService:(DPSocialServise *)service didLoadFriendsInfo:(NSArray *)friends
+- (void)socialService:(DPSocialService *)service didLoadFriendsInfo:(NSArray *)friends
 {
     for (User *user in friends) 
         NSLog(@"%@",user.name);

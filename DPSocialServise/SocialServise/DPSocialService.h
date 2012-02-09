@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DPBaseService.h"
 #import "DPSocialServiceProtocol.h"
 #import "DPSocialServiseProtocolDelegate.h"
 #import "User.h"
-#import "Config.h"
 #import "JSON.h"
 #import "Reachability.h"
 #import "DPShortURL.h"
@@ -25,12 +25,13 @@ typedef enum
     
 }SocialServiseType;
 
-@interface DPSocialServise : NSObject <DPSocialServiceProtocol>
+@interface DPSocialService : DPBaseService <DPSocialServiceProtocol>
 
 @property (nonatomic, unsafe_unretained) id<DPSocialServiseProtocolDelegate>delegate;
 @property (nonatomic, strong) NSMutableArray *quare;
 @property (nonatomic, assign) BOOL didOpenAuthorizedDialog;
-+ (DPSocialServise *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
+
++ (DPSocialService *)socialServiseType:(SocialServiseType)type andDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 - (BOOL)isConnection;
 - (void)callService:(LoadSel)block;
 

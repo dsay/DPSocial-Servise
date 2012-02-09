@@ -1,11 +1,12 @@
 dependencies: \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/FacebookSosialService.m \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/FacebookSosialService.h \
-  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialServise.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/DPSocialService.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/BaseServise/DPBaseService.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Config.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPSocialServiceProtocol.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPSocialServiseProtocolDelegate.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/models/User.h \
-  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/Config.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/JSON.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJSON.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/SBJsonParser.h \
