@@ -13,5 +13,5 @@
     DPSocialService *socialServise;
 }
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) DPShortURL *shorturl;
 @end

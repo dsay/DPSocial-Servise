@@ -203,7 +203,6 @@
 		4DD20CD814DA9E63009C4A4E /* FacebookSosialService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSosialService.m; sourceTree = "<group>"; };
 		4DD20CDA14DA9E63009C4A4E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		4DD20CDB14DA9E63009C4A4E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		4DD20CDD14DA9E63009C4A4E /* DPShortURLProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShortURLProtocolDelegate.h; sourceTree = "<group>"; };
 		4DD20CDE14DA9E63009C4A4E /* DPSocialServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSocialServiceProtocol.h; sourceTree = "<group>"; };
 		4DD20CDF14DA9E63009C4A4E /* DPSocialServiseProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSocialServiseProtocolDelegate.h; sourceTree = "<group>"; };
 		4DD20CE114DA9E63009C4A4E /* DPShortURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShortURL.h; sourceTree = "<group>"; };
@@ -531,7 +530,6 @@
 		4DD20CDC14DA9E63009C4A4E /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4DD20CDD14DA9E63009C4A4E /* DPShortURLProtocolDelegate.h */,
 				4DD20CDE14DA9E63009C4A4E /* DPSocialServiceProtocol.h */,
 				4DD20CDF14DA9E63009C4A4E /* DPSocialServiseProtocolDelegate.h */,
 			);

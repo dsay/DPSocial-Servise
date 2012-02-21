@@ -12,9 +12,8 @@
 
 @implementation DPShortURL
 
-@synthesize delegate;
 
-- (void)getShortURL:(NSString *)string
+- (void)getShortURL:(NSString *)string completionUrl:(getURL)completionUrl
 {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
@@ -29,7 +28,7 @@
         NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:url];
         
         NSHTTPURLResponse* urlResponse = nil;  
-        NSError *error = [[NSError alloc] init];  
+        NSError *error = nil;
         
         NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&urlResponse error:&error];	
         
@@ -48,13 +47,10 @@
                             objectForKey:@"shortUrl"];
             }
             
-            
         }
         dispatch_sync(dispatch_get_main_queue(), ^{
-            if (shortURL) 
-                [self.delegate  didLoadShortURL:shortURL];
-            else
-                [self.delegate  didFailWithError:error];
+            completionUrl(shortURL,error);
+
         });
     });
     

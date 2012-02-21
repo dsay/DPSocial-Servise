@@ -48,11 +48,7 @@
 
 - (BOOL)isAuthorized;
 {
-    [self consumer];
-    self.accessToken = [[OAToken alloc]initWithKey:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterAccessTokenKey] 
-                                            secret:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterSecretTokenKey]];
-    
-    if(_accessToken.key && _accessToken.secret && _consumer)
+    if(self.accessToken.key && self.accessToken.secret && self.consumer)
         return YES;
     
     return NO;
@@ -511,5 +507,12 @@
                                              secret:TwitterSecret];
     return _consumer;
 }
-
+-(OAToken *)accessToken
+{
+    if (_accessToken) 
+        return _accessToken;
+    _accessToken = [[OAToken alloc]initWithKey:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterAccessTokenKey] 
+                                           secret:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterSecretTokenKey]];
+    return _accessToken;
+}
 @end

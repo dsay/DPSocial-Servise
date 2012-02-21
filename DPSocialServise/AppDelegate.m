@@ -12,7 +12,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-
+@synthesize shorturl;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -20,10 +20,17 @@
     socialServise = [DPSocialService socialServiseType:SocialServiseTwitter andDelegate:self];
     
    // [djhfjs postOnMyWallMessage:@"dkv fg  kg  agfdklgdfjkv vdfkjv  vfrkgh jvv v ejfv jjfrfn jdjfhjf" imageURL:@"http://art.ngfiles.com/medium_views/107/shenaniganon_angry-face.png" link:@"http://www.box.com/s/7cuh1mxdfxaopy86bazm"];
-    [socialServise logout];
-    [socialServise getUserInfo];
-    [socialServise getFriendsInfo];
+    //[socialServise logout];
+    //[socialServise getUserInfo];
+   // [socialServise getFriendsInfo];
 
+    shorturl = [[DPShortURL alloc] init];
+    [shorturl getShortURL:@"http://stackoverflow.com/questions/3393042/objective-c-blocks-vs-selectors-vs-protocols" completionUrl:^(NSString *bitLyURL, NSError *bitLyError) {
+        NSLog( @"%@",bitLyURL);
+        NSLog(@"%@",bitLyError);
+    }];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

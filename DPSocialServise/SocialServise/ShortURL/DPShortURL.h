@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPShortURLProtocolDelegate.h"
+
 #import "JSON.h"
 #import "Config.h"
 
+typedef void (^getURL)(NSString *bitLyURL, NSError *bitLyError);
+
 @interface DPShortURL : NSObject
 
-@property (nonatomic, retain) id <DPShortURLProtocolDelegate>delegate;
-
-- (void)getShortURL:(NSString *)string;
+- (void)getShortURL:(NSString *)string completionUrl:(getURL)completionUrl;
 
 @end
