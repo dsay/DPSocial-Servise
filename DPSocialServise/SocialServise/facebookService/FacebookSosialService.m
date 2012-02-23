@@ -122,7 +122,22 @@
             [self.delegate socialServiceDidPost:self];
     }];
 }
-
+- (void)postImageOnMyAlbum:(UIImage *)image
+{
+    [super callService:^(){
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                       image, @"picture",
+                                       nil];
+        
+        [_facebook requestWithGraphPath:@"me/photos"
+                              andParams:params
+                          andHttpMethod:@"POST"
+                            andDelegate:self];
+        
+        if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])  
+            [self.delegate socialServiceDidPost:self];
+    }];
+}
 #pragma mark - 
 #pragma mark facebook delegate
 -(void)fbDidLogin

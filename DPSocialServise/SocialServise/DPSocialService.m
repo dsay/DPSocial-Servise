@@ -57,7 +57,9 @@
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
 }
-
+- (void)postImageOnMyAlbum:(UIImage *)image
+{
+}
 -(void)callService:(LoadSel)block
 {
      if ([self isConnection]) {
