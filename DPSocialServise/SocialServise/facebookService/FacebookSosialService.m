@@ -122,11 +122,12 @@
             [self.delegate socialServiceDidPost:self];
     }];
 }
-- (void)postImageOnMyAlbum:(UIImage *)image
+- (void)postImageOnMyAlbum:(UIImage *)image message:(NSString *)message
 {
     [super callService:^(){
         NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        image, @"picture",
+                                       message, @"message",
                                        nil];
         
         [_facebook requestWithGraphPath:@"me/photos"

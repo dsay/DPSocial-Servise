@@ -8,8 +8,11 @@
 
 #import "DPSocialService.h"
 #import "AuthorizeWebViewController.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "ASINetworkQueue.h"
 
-@interface TwitterSocialService : DPSocialService <AuthorizeWebViewControllerDelegate>
+@interface TwitterSocialService : DPSocialService <AuthorizeWebViewControllerDelegate, ASIHTTPRequestDelegate>
 
 - (id)initWithDelegate:(id<DPSocialServiseProtocolDelegate>)delegate;
 

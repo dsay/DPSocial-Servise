@@ -57,6 +57,8 @@
 		4D6DC64E14E01DC400CB18B6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC64D14E01DC400CB18B6 /* MessageUI.framework */; };
 		4D6DC65014E01DD300CB18B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC64F14E01DD300CB18B6 /* libz.dylib */; };
 		4D6DC65214E01DE300CB18B6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6DC65114E01DE300CB18B6 /* libxml2.dylib */; };
+		4DB607D914F6912000210FF0 /* icn_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB607D814F6912000210FF0 /* icn_info.png */; };
+		4DB96A0714F77A2100882AC7 /* icn_big_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB96A0614F77A2100882AC7 /* icn_big_direction.png */; };
 		4DC4C27214E2D2E0002271B6 /* DPBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4C27114E2D2D1002271B6 /* DPBaseService.m */; };
 		4DD20CE414DA9E63009C4A4E /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD20CBF14DA9E63009C4A4E /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4DD20CE514DA9E63009C4A4E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DD20CC214DA9E63009C4A4E /* FBDialog.bundle */; };
@@ -172,6 +174,8 @@
 		4D6DC64D14E01DC400CB18B6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4D6DC64F14E01DD300CB18B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4D6DC65114E01DE300CB18B6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4DB607D814F6912000210FF0 /* icn_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_info.png; sourceTree = "<group>"; };
+		4DB96A0614F77A2100882AC7 /* icn_big_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_big_direction.png; sourceTree = "<group>"; };
 		4DC4C27014E2D2D1002271B6 /* DPBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBaseService.h; path = BaseServise/DPBaseService.h; sourceTree = "<group>"; };
 		4DC4C27114E2D2D1002271B6 /* DPBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBaseService.m; path = BaseServise/DPBaseService.m; sourceTree = "<group>"; };
 		4DD20CB914DA9E63009C4A4E /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		4D09B55614D958730023E30C /* DPSocialServise */ = {
 			isa = PBXGroup;
 			children = (
+				4DB96A0614F77A2100882AC7 /* icn_big_direction.png */,
+				4DB607D814F6912000210FF0 /* icn_info.png */,
 				4D09B55F14D958730023E30C /* AppDelegate.h */,
 				4D09B56014D958730023E30C /* AppDelegate.m */,
 				4D09B55714D958730023E30C /* Supporting Files */,
@@ -601,6 +607,8 @@
 				4D6DC63B14E0153000CB18B6 /* AuthorizeWebViewController.xib in Resources */,
 				4D6DC63C14E0153000CB18B6 /* List_Item_Background.png in Resources */,
 				4D6DC63D14E0153000CB18B6 /* no_button@2x.png in Resources */,
+				4DB607D914F6912000210FF0 /* icn_info.png in Resources */,
+				4DB96A0714F77A2100882AC7 /* icn_big_direction.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

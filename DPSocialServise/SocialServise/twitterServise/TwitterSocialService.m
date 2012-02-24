@@ -18,7 +18,7 @@
 @property (nonatomic, strong) OAConsumer *consumer;
 @property (nonatomic, strong) OAToken *accessToken;
 @property (nonatomic, strong) AuthorizeWebViewController *authorizeWebView;
-
+@property (nonatomic, strong) ASINetworkQueue *queue;
 @end
 
 @implementation TwitterSocialService
@@ -28,7 +28,7 @@
 @synthesize consumer = _consumer;
 @synthesize accessToken = _accessToken;
 @synthesize authorizeWebView = _authorizeWebView;
-
+@synthesize queue = _queue;
 #pragma mark - 
 #pragma mark init
 
@@ -188,6 +188,29 @@
                       didFailSelector:@selector(postOnFriendWallStatus:didFailWithError:)]; 
     }];
 }
+-(void)postImageOnMyAlbum:(UIImage *)image message:(NSString *)message
+{
+    [super callService:^(){   
+ 
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL   URLWithString:TwitPicUpdate]];
+        
+        [request addPostValue:TWITPIC_API_KEY forKey:@"key"];
+        [request addPostValue:self.consumer.key forKey:@"consumer_token"];
+        [request addPostValue:self.consumer.secret forKey:@"consumer_secret"];
+        [request addPostValue:self.accessToken.key forKey:@"oauth_token"];
+        [request addPostValue:self.accessToken.secret forKey:@"oauth_secret"];
+        [request addPostValue:message forKey:@"message"];
+        [request addData:UIImageJPEGRepresentation(image, 0.8) forKey:@"media"];
+        
+        request.requestMethod = @"POST";
+        
+        [self.queue addOperation:request];
+        [self.queue go];
+
+    }];         
+
+}
+
 #pragma mark - 
 #pragma mark privat
 
@@ -463,8 +486,8 @@
         NSLog(@"post on friends wall");
     }else
         if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
-            [self.delegate socialService:self didFailWithError:[NSError errorWithDomain:@"You cannot send messages to users who are not following you" code:1 userInfo:nil]];
-    NSLog(@"You cannot send messages to users who are not following you");
+            [self.delegate socialService:self didFailWithError:[NSError errorWithDomain:TwitterErrorCannotSend code:1 userInfo:nil]];
+    NSLog(TwitterErrorCannotSend);
 }  
 
 -(void)postOnFriendWallStatus:(OAServiceTicket *)ticket didFailWithError:(NSError *)error
@@ -472,7 +495,16 @@
     if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
         [self.delegate socialService:self didFailWithError:error];
 }
-
+#pragma mark Post image in twitpic
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    if ([self.delegate respondsToSelector:@selector(socialServiceDidPost:)])  
+        [self.delegate socialServiceDidPost:self];
+}
+- (void)requestFailed:(ASIHTTPRequest *)request {
+    if ([self.delegate respondsToSelector:@selector(socialService:didFailWithError:)]) 
+        [self.delegate socialService:self didFailWithError:[NSError errorWithDomain:TwitterErrorTimedOut code:1 userInfo:nil]];
+    NSLog(TwitterErrorTimedOut);
+}
 #pragma mark - 
 #pragma mark property
 
@@ -514,5 +546,18 @@
     _accessToken = [[OAToken alloc]initWithKey:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterAccessTokenKey] 
                                            secret:[[NSUserDefaults standardUserDefaults] stringForKey:TwitterSecretTokenKey]];
     return _accessToken;
+}
+
+-(ASINetworkQueue *)queue
+{
+    if(_queue)
+        return _queue;
+    _queue = [[ASINetworkQueue alloc] init];
+    [_queue setMaxConcurrentOperationCount:1];
+    [_queue setShouldCancelAllRequestsOnFailure:NO];
+    [_queue setDelegate:self];
+    [_queue setRequestDidFinishSelector:@selector(requestFinished:)];
+    [_queue setRequestDidFailSelector:@selector(requestFailed:)];
+    return _queue;
 }
 @end

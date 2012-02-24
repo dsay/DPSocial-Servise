@@ -15,5 +15,4 @@ dependencies: \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/NSObject+SBJSON.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/NSString+SBJSON.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/Reachability/Reachability.h \
-  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/ShortURL/DPShortURL.h \
-  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPShortURLProtocolDelegate.h
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/ShortURL/DPShortURL.h

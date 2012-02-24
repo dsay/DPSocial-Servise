@@ -27,6 +27,6 @@
                    imageURL:(NSString *)path 
                        link:(NSString *)url;
 
-- (void)postImageOnMyAlbum:(UIImage *)image;
+- (void)postImageOnMyAlbum:(UIImage *)image message:(NSString *)message;
 
 @end

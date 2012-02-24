@@ -33,6 +33,7 @@
 
 #define TwitterKey                  @"jYOu0LbC7vX1JUAt54mcAA"//========================
 #define TwitterSecret               @"EhkC00KaWxpynzieRzDLB5aaWgPa6VeuMdXfvhuf8"//=====
+#define TWITPIC_API_KEY             @"1f314871761bee6d4da99f7f0710ab24"//==============    
 //URL
 #define TwitterAuthorize            @"https://api.twitter.com/oauth/authorize"
 #define TwitterRequest              @"https://api.twitter.com/oauth/request_token"
@@ -42,8 +43,14 @@
 #define TwitterUserInfo             @"https://api.twitter.com/account/verify_credentials.json"
 #define TwitterFriendsID            @"https://api.twitter.com/1/friends/ids.json"
 #define TwitterFriendsInfo          @"https://api.twitter.com/1/users/lookup.json"
+//TwitPic URL
+#define TwitPicUpdate               @"http://api.twitpic.com/1/upload.json"
 //const
 #define TwitterAccessTokenKey       @"TwitterAccessTokenKey"
 #define TwitterSecretTokenKey       @"TwitterSecretTokenKey"
 #define TwitterUserID               @"TwitterUserID"
 #define TwitterUserScreenName       @"TwitterUserScreenName"
+
+//error
+#define TwitterErrorCannotSend      @"You cannot send messages to users who are not following you"
+#define TwitterErrorTimedOut        @"Timed out verifying authentication token with Twitter.com. This could be a problem with TwitPic servers. Try again later."

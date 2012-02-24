@@ -57,7 +57,7 @@
 - (void)postOnMyWallMessage:(NSString *)message imageURL:(NSString *)path link:(NSString *)url
 {
 }
-- (void)postImageOnMyAlbum:(UIImage *)image
+- (void)postImageOnMyAlbum:(UIImage *)image message:(NSString *)message
 {
 }
 -(void)callService:(LoadSel)block

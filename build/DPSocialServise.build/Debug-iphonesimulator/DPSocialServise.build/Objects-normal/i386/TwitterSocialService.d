@@ -16,8 +16,14 @@ dependencies: \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/facebookService/facebook/JSON/NSString+SBJSON.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/Reachability/Reachability.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/ShortURL/DPShortURL.h \
-  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/protocols/DPShortURLProtocolDelegate.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/twiView/AuthorizeWebViewController.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASIHTTPRequest.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASIHTTPRequestConfig.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASIHTTPRequestDelegate.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASIProgressDelegate.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASICacheDelegate.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASIFormDataRequest.h \
+  /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/ASIHTTP/ASINetworkQueue.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/OAuthconsumer/OAuthConsumer.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/OAuthconsumer/OAProblem.h \
   /Users/dsay/Desktop/DPSocialServise/DPSocialServise/SocialServise/twitterServise/twitter/OAuthconsumer/OAToken.h \
