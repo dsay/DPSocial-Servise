@@ -25,6 +25,9 @@
     if ([TwitterSecret isEqualToString:@""]) 
         NSLog(@"You don't have TwitterSecret"); 
     
+    if ([TWITPIC_API_KEY isEqualToString:@""]) 
+        NSLog(@"You don't have twitpic api key");
+    
     
     if ([BITLY_KEY isEqualToString:@""]) 
         NSLog(@"You don't have Bitly key");

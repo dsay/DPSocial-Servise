@@ -34,6 +34,7 @@
     return nil;
     
 }
+
 - (BOOL)isAuthorized
 {
     return NO;
@@ -44,6 +45,7 @@
 - (void)logout
 {
 }
+
 - (void)getUserInfo
 {
 }
@@ -60,6 +62,7 @@
 - (void)postImageOnMyAlbum:(UIImage *)image message:(NSString *)message
 {
 }
+
 -(void)callService:(LoadSel)block
 {
      if ([self isConnection]) {
